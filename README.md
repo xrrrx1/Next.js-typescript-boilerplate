@@ -1,11 +1,11 @@
-##Download VS code
+## Download VS code
 
-##Download "Prettier - Code formatter" plugin for VS code
+## Download "Prettier - Code formatter" plugin for VS code
 
-##clone this repo
+## clone this repo
 
-##npm install
+## npm install
 
-##npm run dev
+## npm run dev
 
-##enjoy
+## enjoy
