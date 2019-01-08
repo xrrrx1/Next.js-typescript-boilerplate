@@ -28,7 +28,6 @@ export default class MyDocument extends Document<Props> {
     return (
       <html lang="eu">
         <Head>
-          <title>My page</title>
           {/* Output the styles in the head  */}
           {this.props.styleTags}
         </Head>

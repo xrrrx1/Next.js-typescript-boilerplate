@@ -1,16 +1,20 @@
-import * as React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 
-interface Props {
-  titleColor: string;
-}
+import { HeadersColorContext } from "../context/context";
 
-const StyledTitle = styled.h1<{ titleColor: string }>`
+type Styles = {
+  titleColor: string;
+};
+
+const StyledTitle = styled.h1<Styles>`
   color: ${props => props.titleColor};
 `;
 
-const Title: React.FunctionComponent<Props> = props => (
-  <StyledTitle titleColor={props.titleColor}>title test</StyledTitle>
-);
+const Title: React.FunctionComponent = () => {
+  const HeadersColor = useContext(HeadersColorContext);
+
+  return <StyledTitle titleColor={HeadersColor}>title test</StyledTitle>;
+};
 
 export default Title;
